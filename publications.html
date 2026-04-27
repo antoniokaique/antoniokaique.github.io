@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+/* 
+Azul Céu Pastel	#A8DADC	Azul claro e sereno, lembra o céu limpo ou o mar calmo.
+Azul Areia Molhada	#457B9D	Azul mais profundo, ideal para contraste suave.
+Bege Praia Suave	#F8FCC1	Bege claro amarelado, luminoso e delicado como a areia sob o sol.
+Bege Natural Pastel	#F5F9B3	Um tom mais sólido e quente, muito próximo ao anterior, para variações.
+Branco Gelo	#FAFAFA	Um branco macio, para equilibrar e iluminar.
+Azul Neblina	#CDE2E7	Azul pálido, ótimo para fundos ou áreas suaves de respiro.
+
+Plano de fundo: #FAFAFA ou #F8FCC1
+Destaques e botões suaves: #A8DADC e #CDE2E7
+Contraste elegante (textos/títulos): #457B9D
+Elementos decorativos (detalhes ou ilustrações): #F5F9B3 */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA; /* Branco gelo */
+    color: #457B9D;            /* Azul para texto */
+    line-height: 1.6;
+    
+    
+  max-width: 1500px;
+  margin: 0 auto;
+  }
+  header {
+    background-color: #457B9D; 
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #FAFAFA; 
+  }
+nav a {
+    margin-left: 1.5rem;
+  position: relative;
+  text-decoration: none;
+  color: #FAFAFA;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* cor no hover */
+nav a:hover {
+  color: #A8DADC;
+}
+
+/* barra inferior animada */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #A8DADC;
+  transition: width 0.3s ease;
+}
+
+/* animação ao passar o mouse */
+nav a:hover::after {
+  width: 100%;
+}  .page-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 0rem;
+}
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #FAFAFA; 
+  }
+  .hero-text {
+    max-width: 50%;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: #457B9D;
+  }
+  .hero p {
+    margin-bottom: 1.5rem;
+  }
+  .hero button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #A8DADC; /* Azul céu pastel */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .hero img {
+    max-width: 40%;
+    border-radius: 10px;
+  }
+  .highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    background-color: #FAFAFA; 
+  }
+  
+  .highlight-box {
+    background-color: #457B9D; 
+    padding: 1.5rem;
+    border-radius: 23px;
+    text-align: center;
+    width: 30%;
+    color: white;
+  }
+  .section {
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section img {
+    width: 40%;
+    border-radius: 10px;
+  }
+  .section .text {
+    width: 90%;
+    padding: 0 2rem;
+  }
+  footer {
+    background-color: #457B9D; /* Azul mais profundo */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  p {
+    margin-bottom: 24px; /* Espaçamento maior entre parágrafos */
+    line-height: 1.6;
+  }
+  .publication-entry p {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>Antônio Kaique</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="events.html">Scientific events</a>
+    </nav>
+  </header>
+  
+<section class="section" id="publications-style1">
+  <div class="text">
+    <h2 style="font-size: 2rem; margin-bottom: 2rem;">Publications</h2>
+
+    <h3 style="font-size: 1.5rem; color: #457B9D; margin-bottom: 1rem; border-bottom: 2px solid #A8DADC; padding-bottom: 0.5rem;">Paper</h3>
+    <ul style="list-style-type: disc; padding-left: 1.5rem;">
+      <li style="margin-bottom: 2rem;">
+        <p style="margin-bottom: 6px; line-height: 1.4;">A. Kaique, C. Hitoshi, L. Silva, L. Brandão, P. Lima</p>
+        <p style="margin-bottom: 6px; line-height: 1.4;"><em><strong>
+        <a href="https://www.computer.org/csdl/proceedings-article/fie/2023/10343502/1TsC4DFefew" target="_blank" style="text-decoration: underline; color: inherit; font-style: italic;">
+	iFractions 2.0: improving the feedback of a fractions Web learning game
+      </a>
+        </strong></em></p>
+        <p style="margin-bottom: 6px; line-height: 1.4;">Frontiers in Education Conference (FIE 2023)</p>
+      </li>
+    </ul>
+
+    <h3 style="font-size: 1.5rem; color: #457B9D; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #A8DADC; padding-bottom: 0.5rem;">Extended Abstracts</h3>
+    <ul style="list-style-type: disc; padding-left: 1.5rem;">
+<li style="margin-bottom: 2rem;">
+  <p style="margin-bottom: 6px; line-height: 1.4;">
+    F. Botler, A. Kaique, W. Mendonça, G. O. Mota, C. Sato
+  </p>
+
+  <p style="margin-bottom: 6px; line-height: 1.4;">
+    <em><strong>
+<a href="https://repositorio.usp.br/directbitstream/4cee253e-d4d3-4de2-910f-b1e64c8b77da/3271549.pdf" target="_blank" style="text-decoration: underline; color: inherit; font-style: italic;">
+      Rainbow path covers of sparse random graphs
+      </a>
+    </strong></em>
+  </p>
+
+  <p style="margin-bottom: 6px; line-height: 1.4;">
+    European Conference on Combinatorics, Graph Theory and Applications (Eurocomb 2025)
+  </p>
+</li>
+      <li style="margin-bottom: 2rem;">
+        <p style="margin-bottom: 6px; line-height: 1.4;">A. Kaique, G. O. Mota, T. Naia</p>
+        <p style="margin-bottom: 6px; line-height: 1.4;"><em><strong>
+<a href="https://sol.sbc.org.br/index.php/etc/article/view/24730" target="_blank" style="text-decoration: underline; color: inherit; font-style: italic;">
+	Cobertura de grafos aleatórios por caminhos multicoloridos
+      </a>
+</strong></em></p>
+        <p style="margin-bottom: 6px; line-height: 1.4;">Anais do VIII Encontro de Teoria da Computação (ETC 2023)</p>
+      </li>
+      <li style="margin-bottom: 2rem;">
+        <p style="margin-bottom: 6px; line-height: 1.4;">A. Kaique, G. O. Mota, M. Collares, H. M. Vicente</p>
+        <p style="margin-bottom: 6px; line-height: 1.4;"><em><strong>        <p style="margin-bottom: 6px; line-height: 1.4;"><em><strong>
+<a href="https://sol.sbc.org.br/index.php/etc/article/view/16377" target="_blank" style="text-decoration: underline; color: inherit; font-style: italic;">
+	Árvores Ramsey-restritas mínimas
+      </a>
+      </strong></em></p>
+        <p style="margin-bottom: 6px; line-height: 1.4;">Anais do VI Encontro de Teoria da Computação (ETC 2021)</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<footer>
+  <p>Last updated: <span id="data-atualizacao"></span></p>
+</footer>
+
+<script>
+  const data = new Date(document.lastModified);
+
+  const day = data.getDate().toString().padStart(2, '0');
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  const month = months[data.getMonth()];
+  const year = data.getFullYear();
+
+  const formattedDate = `${day} ${month} ${year}`;
+
+  document.getElementById("data-atualizacao").textContent = formattedDate;
+</script>
+</body>
+</html>
